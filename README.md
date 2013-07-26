@@ -2,6 +2,8 @@
 
 A WYSIWYG HTML Editor component for Codename One
 
+![CKeditor Widget in CodenameOne Simulator](https://github.com/shannah/cn1-ckeditor/raw/master/screenshots/ckeditor-iphone4.png)
+
 ##Synopsis
 
 The CKeditor widget wraps the Javascript [CKeditor](http://ckeditor.com/) widget inside a [BrowserComponent](https://codenameone.googlecode.com/svn/trunk/CodenameOne/javadoc/com/codename1/ui/BrowserComponent.html) and exposes
@@ -22,7 +24,7 @@ get it working.
 ##Installation Instructions (Using Netbeans)
 
 1. Add the [CN1JSLib.cn1lib](https://github.com/shannah/CodenameOneJS/raw/master/dist/CN1JSLib.cn1lib) (i.e. the Codename One Javascript bridge) library to your project's lib directory.
-2. Add the CodenameOneCKeditorComponent.cnlib library to your project's lib directory.
+2. Add the [CodenameOneCKeditorComponent.cnlib](https://github.com/shannah/cn1-ckeditor/blob/master/dist/CodenameOneCKeditorComponent.cn1lib?raw=true) library to your project's lib directory.
 3. Right click on your project in the netbeans project explorer, and select "Refresh Libs" (so that Netbeans will recognize your libs).
 
 
