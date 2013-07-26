@@ -30,19 +30,19 @@ get it working.
 
 1. Create a new CKeditor object:
     
-    CKeditor editor = new CKeditor();
+        CKeditor editor = new CKeditor();
     
 2. Initialize the editor.  You can either do this asynchronously with initLater(), or synchronously with initAndWait().  Your choice will
 depend on whether you want to start interacting with it right away.
 
-    editor.initLater();
-    
-    // or editor.initAndWait();
+        editor.initLater();
+        
+        // or editor.initAndWait();
     
 3. Add editor to your form.
 
-    form.setLayout(new BorderLayout());
-    form.addComponent(BorderLayout.CENTER, editor);
+        form.setLayout(new BorderLayout());
+        form.addComponent(BorderLayout.CENTER, editor);
     
 ###Getting current contents:
 
