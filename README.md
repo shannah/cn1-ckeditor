@@ -17,7 +17,7 @@ get it working.
 2. [Codename One Javascript Bridge](https://github.com/shannah/CodenameOneJS)
 3. Tested to work for the Simulator and Android (using the Build server).  Currently only works on iOS using an [offline build](http://sjhannah.com/blog/?p=228).  Windows Phone not tested, and won't work on Blackberry or JME since they don't support native browser components.
 
-Note:  When/if the Codename One build server is updated to support directory structures for resources rather than a flat structure, it will work on iOS using the build server also.  In the mean time, it will work with offline builds only.  (As of July 30, 2013).
+Note:  When/if the Codename One build server is updated to support directory structures for resources rather than a flat structure, it will work on iOS using the build server also.  In the mean time, it will work with offline builds only.  See [this issue](https://code.google.com/p/codenameone/issues/detail?can=2&start=0&num=100&q=&colspec=ID%20Type%20Status%20Priority%20Milestone%20Owner%20Summary&groupby=&sort=&id=809) to track the progress of this.
 
 ##License
 
