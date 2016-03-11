@@ -11,13 +11,6 @@ a subset of the functionality as a Java API.  It can easily be improved to add a
 functionality also, but just putting up the bare-bones necessary features right now to
 get it working.
 
-##Requirements
-
-1. [Codename One 1.0](http://www.codenameone.com) or higher
-2. [Codename One Javascript Bridge](https://github.com/shannah/CodenameOneJS)
-3. Tested to work for the Simulator and Android (using the Build server).  Currently only works on iOS using an [offline build](http://sjhannah.com/blog/?p=228).  Windows Phone not tested, and won't work on Blackberry or JME since they don't support native browser components.
-
-Note:  When/if the Codename One build server is updated to support directory structures for resources rather than a flat structure, it will work on iOS using the build server also.  In the mean time, it will work with offline builds only.  See [this issue](https://code.google.com/p/codenameone/issues/detail?can=2&start=0&num=100&q=&colspec=ID%20Type%20Status%20Priority%20Milestone%20Owner%20Summary&groupby=&sort=&id=809) to track the progress of this.
 
 ##License
 
@@ -25,10 +18,8 @@ Note:  When/if the Codename One build server is updated to support directory str
 
 ##Installation Instructions (Using Netbeans)
 
-1. Add the [CN1JSLib.cn1lib](https://github.com/shannah/CodenameOneJS/raw/master/dist/CN1JSLib.cn1lib) (i.e. the Codename One Javascript bridge) library to your project's lib directory.
-2. Add the [CodenameOneCKeditorComponent.cnlib](https://github.com/shannah/cn1-ckeditor/blob/master/dist/CodenameOneCKeditorComponent.cn1lib?raw=true) library to your project's lib directory.
+1  Add the [CodenameOneCKeditorComponent.cnlib](https://github.com/shannah/cn1-ckeditor/blob/master/CodenameOneCKeditorComponent.cn1lib?raw=true) library to your project's lib directory.
 3. Right click on your project in the netbeans project explorer, and select "Refresh Libs" (so that Netbeans will recognize your libs).
-
 
 ##Usage
 
