@@ -5,15 +5,19 @@
  */
 package ca.weblite.codename1.components.ckeditor;
 
-import ca.weblite.codename1.js.JSFunction;
-import ca.weblite.codename1.js.JSObject;
-import ca.weblite.codename1.js.JavascriptContext;
+
+import com.codename1.io.Log;
+import com.codename1.javascript.JSFunction;
+import com.codename1.javascript.JSObject;
+import com.codename1.javascript.JavascriptContext;
 import com.codename1.ui.BrowserComponent;
 import com.codename1.ui.Container;
 import com.codename1.ui.Display;
 import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.events.ActionListener;
 import com.codename1.ui.layouts.BorderLayout;
+import java.io.IOException;
+
 
 /**
  *
@@ -38,6 +42,8 @@ public class CKeditor extends Container {
     private void init(final Runnable afterInit){
         Display.getInstance().setProperty("WebLoadingHidden", "true");
         browser = new BrowserComponent();
+        browser.getAllStyles().setPadding(0, 0, 0, 0);
+        browser.getAllStyles().setMargin(0, 0, 0, 0);
         this.setLayout(new BorderLayout());
         this.addComponent(BorderLayout.CENTER, browser);
         
@@ -45,6 +51,7 @@ public class CKeditor extends Container {
 
             public void actionPerformed(ActionEvent evt) {
                 try {
+                    System.out.println("In onLoad");
                     JavascriptContext c = new JavascriptContext(browser);
                     
                     ckeditor = (JSObject)c.get("CKEDITOR.instances['ckeditor']");
@@ -62,7 +69,12 @@ public class CKeditor extends Container {
             }
             
         });
-        browser.setURL("jar:///ca/weblite/codename1/components/ckeditor/resources/ckeditor.html");
+        try {
+            System.out.println("About to load file "+"ca/weblite/codename1/components/ckeditor/resources/ckeditor.html");
+            browser.setURLHierarchy("ca/weblite/codename1/components/ckeditor/resources/ckeditor.html");
+        } catch (IOException ex) {
+            Log.e(ex);
+        }
     }
     
     public void initLater(Runnable afterInit){
